@@ -22,6 +22,7 @@ var pikePlaceMkt = {
 
   randomCookiesPerHour: [],
   calcCookiesThisHour: function () {
+    this.calcCustomersPerHour();
       for (var i = 0; i < hours.length; i++) {
         var avgCookiesPerCustomer = (Math.ceil(this.randomCustomersPerHours[i] * this.avgCookiesPerCustomer));
         console.log(this.avgCookiesPerCustomer);
@@ -93,9 +94,9 @@ seaTac.render();
 
 var seaCenter = {
   locationName: 'Seattle Center',
-  minCusHour: 3,
-  maxCusHour: 24,
-  avgCookiesPerCustomer: 1.2,
+  minCusHour: 11,
+  maxCusHour: 38,
+  avgCookiesPerCustomer: 3.7,
   totalDailySales: 0,
   randomCustomersPerHours: [],
   totalCookiesPerHour: [],
@@ -137,9 +138,9 @@ seaCenter.render();
 
 var capHill = {
   locationName: 'Capital Hill',
-  minCusHour: 3,
-  maxCusHour: 24,
-  avgCookiesPerCustomer: 1.2,
+  minCusHour: 20,
+  maxCusHour: 38,
+  avgCookiesPerCustomer: 2.3,
   totalDailySales: 0,
   randomCustomersPerHours: [],
   totalCookiesPerHour: [],
@@ -180,8 +181,8 @@ capHill.render();
 
 var alki = {
   locationName: 'Alki',
-  minCusHour: 3,
-  maxCusHour: 24,
+  minCusHour: 2,
+  maxCusHour: 16,
   avgCookiesPerCustomer: 1.2,
   totalDailySales: 0,
   randomCustomersPerHours: [],
