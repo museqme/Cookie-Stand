@@ -4,12 +4,13 @@ var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm',
   '3pm', '4pm', '5pm', '6pm', '7pm'];
 var cookietable = document.getElementById('cookiestand');
 
-// constructor objectWith(arguments, inside, parenthesis) {
+// OBJECT-constructorWith(arguments, inside, parenthesis) {
   //this.properties = properties;
   //this.areListed = areListed;
   //this.withIn = withIn;
   //this.objectProperties = objectProperties;
-  //FunctionName.all.push(this);
+  //ObjectName.all.push(this);<------Array Created. will use in instances below.
+//}
 function CookieShop(locName, minCusHour, maxCusHour, avgCookiesPerCustomer) {
   this.locName = locName;
   this.minCusHour = minCusHour;
@@ -20,13 +21,22 @@ function CookieShop(locName, minCusHour, maxCusHour, avgCookiesPerCustomer) {
   this.totalDailySales = 0;
   CookieShop.all.push(this);
 }
-//MethodsObjectName.prototype.valueOf = function()
+//METHOD-ObjectName.prototype.valueOf = function() {
+  //for (loop i = 0; i < array.length; i++) {
+    //this.propertyArray.push(random(this.property, this.property));<----Array created. will need for method below.
+  //}
+//};
 CookieShop.prototype.calcCustomersPerHour = function() {
   for (var i = 0; i < hours.length; i++) {
     this.randomCustomersPerHours.push(random(this.minCusHour, this.avgCookiesPerCustomer));
   }
 };
-
+//METHOD-ObjectName.prototype.secondValue = function() {
+  //this.parentParentProperty();
+    //for (loop i = 0; i < array.length; i++) {
+      //var newVariable = Math.ceil(this.maxIntegerFromParentMethod[i] * this.maxInteger);
+      //this.arrayProperty.push(newVariable);
+      //this.propertyNumber += newVariable;<------ / += x=x+y
 CookieShop.prototype.calcCookiesThisHour = function() {
   this.calcCustomersPerHour();
   for (var i = 0; i < hours.length; i++) {
@@ -55,7 +65,7 @@ CookieShop.prototype.render = function() {
 
 CookieShop.all = [];
 new CookieShop('Pike Place Market', 23, 65, 6.3);
-new CookieShop('SeaTac Airport', 3, 24, 1.2);
+new CookieShop('SeaTac Airport', 3, 25, 1.2);
 new CookieShop('Seattle Center', 11, 38, 3.7);
 new CookieShop('Capital Hill', 20, 38, 2.3);
 new CookieShop('Alki', 2, 16, 4.6);
