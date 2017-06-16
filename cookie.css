@@ -6,3 +6,6 @@ h1, h2 {
   font-family: 'Spectral', serif;
   font-family: 'Abril Fatface', cursive;
 }
+label {
+  color: salmon;
+}
