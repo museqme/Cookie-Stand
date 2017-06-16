@@ -3,11 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Cookie Stand</title>
-    <link style="stylesheet" type="text/css" href="cookie.css">
+    <link style="stylesheet" href="cookie.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Spectral" rel="stylesheet">
   </head>
   <body>
     <h1>Pat's Salmon Cookies</h1>
+    <form id="add-location">
+      <fieldset>
+        <legend>New Store</legend>
+        <label for="locName">Location Name</label>
+        <input name="locaName" type="text">
+
+        <label for="min">Minimum Customers Per Hour</label>
+        <input name="min" type="numbers">
+
+        <label for="max">Maximum Customers Per Hour</label>
+        <input name="max" type="text">
+
+        <label for="avg">Cookies Per Sale</label>
+        <input name="avg" type="text">
+
+        <button type="submit">ADD</button>
+
+      </fieldset>
+    </form>
     <table id="cookiestand"></table>
 
   <script src="app2.js"></script>
