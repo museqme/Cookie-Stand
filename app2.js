@@ -90,6 +90,14 @@ function handleForm(e) {
   var max = parseInt(e.target.max.value);
   var avg = parseFloat(e.target.avg.value);
 
+  //Prevent empty fields
+  // if(!loc || !min || !max || !avg) {
+  //   return alert('All fields must be filled');
+  // }
+  if(typeof min !== 'number') {
+    return alert('Make sure number fields are ONLY numbers.');
+  }
+
   for (var i = 0; i < CookieShop.all.length; i++) {
     if(loc === CookieShop.all[i].locName) {
       // reassigning the starter properties //
@@ -146,7 +154,7 @@ function makeHeaderRow() {
   }
 //
   thEl = document.createElement('th');
-  thEl.textContent = 'Location Totals';
+  thEl.textContent = 'Totals';
   trEl.appendChild(thEl);
   cookietable.appendChild(trEl);
 }
@@ -154,7 +162,7 @@ function makeHeaderRow() {
 function makeFooterRow() {
   var trEl = document.createElement('tr');
   var thEl = document.createElement('th');
-  thEl.textContent = 'Hourly Totals for All Locations';
+  thEl.textContent = 'Hourly Totals';
   trEl.appendChild(thEl);
 
   var totalOfTotals = 0;
