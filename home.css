@@ -1,0 +1,44 @@
+* {
+  font-family: 'Bubbler One', sans-serif;
+}
+#logo {
+  width: 10em;
+  length: 15em;
+  position: absolute;
+  left: 7em;
+  top: 3em;
+}
+.logo {
+  align-content: center;
+  position: absolute;
+  left: 30em;
+}
+.hours {
+  position: absolute;
+  right: 50em;
+  top: 30em;
+  font-size: 40;
+  text-align: center;
+}
+h1 {
+  background-color: salmon;
+  padding: 2em;
+  margin-top: 0em;
+  color: #146eff;
+  padding-bottom: 40em;
+  padding-top:4em;
+}
+ul {
+  position: absolute;
+  right: 700px
+  top: 500px;
+  /*margin: 10px auto;*/
+}
+#hrs {
+  font-size: 40px
+}
+#logo  {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+       }
