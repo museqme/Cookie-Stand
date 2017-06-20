@@ -3,15 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>Cookie Stand</title>
-    <link style="stylesheet" type="text/css" href="cookie.css">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Spectral" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cookie.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   </head>
   <body>
-    <h1>Pat's Salmon Cookies</h1>
-    <table id="cookiestand">
-      <thead></thead>
-    </table>
+    <div class="logo">
+    <img src="img/salmon.png">
+    <br>
+    <br>
+    <h1 id="title">PAT'S SALMON COOKIES</h1>
+    </div>
+    <table id="cookiestand"></table>
+    <form id="add-location">
+      <fieldset>
+        <legend>New Store</legend>
+        <label for="locName" class="formStyle">Location Name</label>
+        <input name="locaName" type="text"/>
 
-  <script src="app2.js" type="text/javascript"></script>
+        <label for="min" class="formStyle">Minimum Customers Per Hour</label>
+        <input name="min" type="number"/>
+<br/>
+        <label for="max" class="formStyle">Maximum Customers Per Hour</label>
+        <input name="max" type="number"/>
+
+        <label for="avg" class="formStyle">Cookies Per Sale</label>
+        <input name="avg" type="number"/>
+
+        <button type="submit">ADD</button>
+
+      </fieldset>
+    </form>
+
+  <script src="app2.js"></script>
   </body>
 </html>

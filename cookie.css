@@ -1,8 +1,52 @@
 * {
-  font-family: 'Arial', sans-serif;
+  margin: 3%;
+}
+h1 {
+  font-family: 'Bubbler One', sans-serif;
+  color: #146eff;
+  background: salmon;
+  margin-left: 50%;
+  text-align: center;
+  letter-spacing: .1em;
+  margin-top: 3em;
+  /*padding-top: 2em;*/
+}
+#add-location {
+padding: 3% 0 3% 10%;
 
 }
-h1, h2 {
-  font-family: 'Spectral', serif;
-  font-family: 'Abril Fatface', cursive;
+legend {
+  font-family: 'Bubbler One', sans-serif;
+}
+.formStyle {
+  font-family: 'Bubbler One', sans-serif;
+  text-align: left;
+}
+#cookiestand {
+  color: white;
+  margin-left: auto;
+  margin-top: 4em;
+  font-family: 'Bubbler One', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: .2em;
+  text-align: right;
+  background: #146eff;
+  padding: 5%;
+}
+img {
+  width: 20%;
+  length: 20%;
+  position: absolute;
+  right: 13em;
+  top: 3em;
+  padding-bottom: 3em;
+}
+tr {
+  outline-color: salmon;
+}
+formStyle {
+  font-weight: bold;
+}
+.logo {
+  align-items: center;
 }
